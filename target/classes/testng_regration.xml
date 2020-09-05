@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Kommunicate Application suite" verbose="1" >
+    <listeners>
+        <listener class-name="com.km.extentreportslistener.ExtentReporterNG" />
+    </listeners>
+    <test name="Kommunicate App Test cases" >
+        <classes>
+            <class name="dashboard.casetest.LoginPageTest" />
+            <class name="dashboard.casetest.DashboardPageTest" />
+        </classes>
+    </test>
+
+</suite>
