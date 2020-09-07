@@ -5,8 +5,8 @@ node {
    stage('SCM Checkout'){
     // Clone repo
 	git branch: 'master', 
-	credentialsId: 'github', 
-	url: 'https://github.com/javahometech/myweb'
+	credentialsId: 'jenkins', 
+	url: 'https://github.com/vipinsonu1/Automations.git'
    
    }
    
