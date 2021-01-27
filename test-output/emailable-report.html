@@ -9,18 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default Suite</th></tr>
-<tr><td><a href="#t0">testcom</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">207,004</td><td></td><td></td></tr>
+<tr><td><a href="#t0">testcom</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">164,121</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">testcom &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">dashboard.casetest.DashboardPageTest</td><td><a href="#m0">verifyDashboardBotTextTest</a></td><td rowspan="1">1597042917679</td><td rowspan="1">30070</td></tr><tr><th colspan="4">testcom &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">dashboard.casetest.DashboardPageTest</td><td><a href="#m1">verifyDashboardTeammateTextTest</a></td><td rowspan="1">1597042856616</td><td rowspan="1">29104</td></tr><tr class="passedeven"><td><a href="#m2">verifydashboardPageTest</a></td><td rowspan="1">1597042793473</td><td rowspan="1">11876</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">testcom &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">dashboard.casetest.DashboardPageTest</td><td><a href="#m0">verifyDashboardBotTextTest</a></td><td rowspan="1">1610037749668</td><td rowspan="1">40037</td></tr><tr class="failedeven"><td><a href="#m1">verifyDashboardTeammateTextTest</a></td><td rowspan="1">1610037688651</td><td rowspan="1">40086</td></tr><tr><th colspan="4">testcom &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">dashboard.casetest.DashboardPageTest</td><td><a href="#m2">verifydashboardPageTest</a></td><td rowspan="1">1610037655587</td><td rowspan="1">15498</td></tr></tbody>
 </table>
 <h2>testcom</h2><h3 id="m0">dashboard.casetest.DashboardPageTest#verifyDashboardBotTextTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;Bots&apos;)]&quot;}
-  (Session info: chrome=84.0.4147.105)
+  (Session info: chrome=87.0.4280.141)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Vipins-Air&apos;, ip: &apos;fe80:0:0:0:8c0:91a0:9ec9:73a7%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;11.0.2&apos;
+System info: host: &apos;Vipins-Air&apos;, ip: &apos;fe80:0:0:0:1cf7:df4b:8a8a:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;11.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/yr/9xn3gv_55qn...}, goog:chromeOptions: {debuggerAddress: localhost:61740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5c3577d174c16cd9c495680d3c25c640
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/yr/9xn3gv_55qn...}, goog:chromeOptions: {debuggerAddress: localhost:49787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 69683507965dd28ad241a2953386cb49
 *** Element info: {Using=xpath, value=//p[contains(text(),&apos;Bots&apos;)]}
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
@@ -35,13 +35,40 @@ Session ID: 5c3577d174c16cd9c495680d3c25c640
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at com.sun.proxy.$Proxy11.getText(Unknown Source)
-	at com.km.pages.DashboardPage.verifyDashboardBotText(DashboardPage.java:97)
+	at com.km.pages.DashboardPage.verifyDashboardBotText(DashboardPage.java:91)
 	at dashboard.casetest.DashboardPageTest.verifyDashboardBotTextTest(DashboardPageTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">dashboard.casetest.DashboardPageTest#verifyDashboardTeammateTextTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">dashboard.casetest.DashboardPageTest#verifyDashboardTeammateTextTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;Teammates&apos;)]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Vipins-Air&apos;, ip: &apos;fe80:0:0:0:1cf7:df4b:8a8a:9009%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/yr/9xn3gv_55qn...}, goog:chromeOptions: {debuggerAddress: localhost:49730}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2d6806992de59f6b82a3e792de1cc5fc
+*** Element info: {Using=xpath, value=//p[contains(text(),&apos;Teammates&apos;)]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at com.km.pages.DashboardPage.verifyDashboardTeammateText(DashboardPage.java:95)
+	at dashboard.casetest.DashboardPageTest.verifyDashboardTeammateTextTest(DashboardPageTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">dashboard.casetest.DashboardPageTest#verifydashboardPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

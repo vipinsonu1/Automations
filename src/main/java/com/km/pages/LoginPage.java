@@ -20,9 +20,9 @@ public class LoginPage extends TestBase {
     @FindBy(id = "login-button")
     WebElement login;
 
-    @FindBy(xpath = "//div[@id='application-list-main-container']//div[1]")
+   /* @FindBy(xpath = "//div[@id='application-list-main-container']//div[1]")
     WebElement appsList;
-
+*/
     @FindBy(xpath = "//h1[@class='login-signup-heading text-center']")
     WebElement kmLoginPage;
 
@@ -44,13 +44,13 @@ public class LoginPage extends TestBase {
          passwoard.sendKeys(strPassword);
 
      }
- */
+
     public void getAppList() {
 
         appsList.click();
 
     }
-
+ */
 
     public void clickLogin() {
 
@@ -75,7 +75,7 @@ public class LoginPage extends TestBase {
         passwoard.sendKeys(strPassword);
 
         clickLogin();
-        getAppList();
+      //  getAppList();
         return new DashboardPage();
     }
 }

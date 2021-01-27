@@ -8,6 +8,7 @@
           <include name="tearDown"/>
           <include name="verifyDashboardBotTextTest"/>
           <include name="setUp"/>
+          <include name="verifyDashboardTeammateTextTest"/>
         </methods>
       </class> <!-- dashboard.casetest.DashboardPageTest -->
     </classes>

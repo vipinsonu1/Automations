@@ -27,8 +27,6 @@ public class HelpCenterTest extends TestBase {
         loginPage = new LoginPage();
         dashboardPage = loginPage.loginToDashboard("vipin+testkm01012018@applozic.com", "abcdef");
         helpcenterSectionsPage =dashboardPage.clickFaqSections();
-
-
     }
 
     @Test(priority = 1)
