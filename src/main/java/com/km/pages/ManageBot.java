@@ -21,7 +21,7 @@ public class ManageBot  extends TestBase {
     WebElement KOMPOSE;
     @FindBy(xpath = "//input[contains(@placeholder,'Example: Alex, Bot')]")
     WebElement BOT_NAME;
-    @FindBy(xpath = "//div[@class='BotStyledStep2__BotIconSvgContainer-sc-7ins27-8 ihIBKp']")
+    @FindBy(xpath = "//div[@class='BotStyledStep2__BotIconWrapper-sc-7ins27-7 itRSFU']//div[2]")
     WebElement BOT_IMAGE;
     @FindBy(xpath = "//button[normalize-space()='Save and proceed']")
     WebElement BOT_SAVE;

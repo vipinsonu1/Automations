@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6202ca13-113a-41fc-846c-1e603a72ed74" name="Default Changelist" comment="" />
+    <list default="true" id="6202ca13-113a-41fc-846c-1e603a72ed74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiTestCases/appSetting/settingsApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/TestData1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/TestData1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/km/pages/ManageBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/km/pages/ManageBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/files/resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/resources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/km/pages/ManageBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/km/pages/ManageBot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/files/resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/resources.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +70,7 @@
       <recent name="compareui" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ManageBotTest.verifyeditKomposeTest">
+  <component name="RunManager" selected="TestNG.settingsApiTest.settingsTest">
     <configuration name="DashboardPageTest" type="TestNG" nameIsGenerated="true">
       <module name="testcom" />
       <useClassPathOnly />
@@ -90,23 +98,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManageBotTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="testcom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dashboard.casetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dashboard.casetest" />
-      <option name="MAIN_CLASS_NAME" value="dashboard.casetest.ManageBotTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ManageBotTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testcom" />
       <extension name="coverage">
@@ -118,24 +109,6 @@
       <option name="PACKAGE_NAME" value="dashboard.casetest" />
       <option name="MAIN_CLASS_NAME" value="dashboard.casetest.ManageBotTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManageBotTest.verifyContentPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="testcom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dashboard.casetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dashboard.casetest" />
-      <option name="MAIN_CLASS_NAME" value="dashboard.casetest.ManageBotTest" />
-      <option name="METHOD_NAME" value="verifyContentPageTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -178,21 +151,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="profileDetailApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testcom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTestCases.userDetail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTestCases.userDetail" />
+      <option name="MAIN_CLASS_NAME" value="apiTestCases.userDetail.profileDetailApiTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="settingsApiTest.settingsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testcom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTestCases.appSetting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTestCases.appSetting" />
+      <option name="MAIN_CLASS_NAME" value="apiTestCases.appSetting.settingsApiTest" />
+      <option name="METHOD_NAME" value="settingsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="TestNG.DashboardPageTest" />
-      <item itemvalue="TestNG.ManageBotTest.verifyContentPageTest" />
-      <item itemvalue="TestNG.ManageBotTest (2)" />
       <item itemvalue="TestNG.ManageBotTest.verifyContentPageTest2" />
       <item itemvalue="TestNG.ManageBotTest.verifyeditKomposeTest" />
       <item itemvalue="TestNG.ManageBotTest" />
+      <item itemvalue="TestNG.profileDetailApiTest" />
+      <item itemvalue="TestNG.settingsApiTest.settingsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.settingsApiTest.settingsTest" />
+        <item itemvalue="TestNG.profileDetailApiTest" />
         <item itemvalue="TestNG.ManageBotTest.verifyeditKomposeTest" />
         <item itemvalue="TestNG.ManageBotTest" />
         <item itemvalue="TestNG.ManageBotTest.verifyContentPageTest2" />
-        <item itemvalue="TestNG.ManageBotTest (2)" />
-        <item itemvalue="TestNG.ManageBotTest.verifyContentPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -211,6 +219,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="100" y="123" width="1240" height="624" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1612458408830">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="100" y="123" width="1240" height="624" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.877@0.23.1440.877" timestamp="1612458408830" />
     <state x="408" y="178" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1610682948905">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -219,22 +231,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="455" height="466" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1610292743651" />
-    <state width="1398" height="330" key="GridCell.Tab.0.bottom" timestamp="1611570896021">
+    <state width="1398" height="338" key="GridCell.Tab.0.bottom" timestamp="1612458845583">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="330" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1611570896021" />
-    <state width="1398" height="330" key="GridCell.Tab.0.center" timestamp="1611570896020">
+    <state width="1398" height="338" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1612458845583" />
+    <state width="1398" height="338" key="GridCell.Tab.0.center" timestamp="1612458845582">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="330" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1611570896020" />
-    <state width="1398" height="330" key="GridCell.Tab.0.left" timestamp="1611570896019">
+    <state width="1398" height="338" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1612458845582" />
+    <state width="1398" height="338" key="GridCell.Tab.0.left" timestamp="1612458845581">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="330" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1611570896019" />
-    <state width="1398" height="330" key="GridCell.Tab.0.right" timestamp="1611570896020">
+    <state width="1398" height="338" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1612458845581" />
+    <state width="1398" height="338" key="GridCell.Tab.0.right" timestamp="1612458845582">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="330" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1611570896020" />
+    <state width="1398" height="338" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1612458845582" />
     <state width="1398" height="330" key="GridCell.Tab.1.bottom" timestamp="1611570896024">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

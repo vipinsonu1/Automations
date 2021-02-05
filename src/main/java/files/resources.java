@@ -39,6 +39,10 @@ public class resources {
         String res="/rest/ws/users";
         return res;
     }
+    public  static String appsettings(){
+        String res="/rest/ws/settings/application";
+        return res;
+    }
     public  static String getLogin(){
         String res="/rest/ws/loginv2";
         return res;
