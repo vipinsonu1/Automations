@@ -27,8 +27,8 @@ public class BotIntegrationTest extends TestBase {
     public void verifyintegratedialogflowES() throws InterruptedException {
         botIntegrationPage.integratedialogflowES();
     }
-   /* @AfterMethod
+    @AfterMethod
     public void tearDown() {
         driver.quit();
-    }*/
+    }
 }

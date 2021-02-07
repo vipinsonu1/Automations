@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6202ca13-113a-41fc-846c-1e603a72ed74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dashboard/casetest/BotIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/km/pages/BotIntegrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/km/pages/BotIntegrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/km/pages/BotIntegrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/km/pages/BotIntegrationPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/apiTestCases/appSetting/settingsApiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/apiTestCases/appSetting/settingsApiTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dashboard/casetest/BotIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dashboard/casetest/BotIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
