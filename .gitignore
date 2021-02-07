@@ -1,0 +1,7 @@
+.gradle
+/.idea/
+.idea/workspace.xml
+!.idea/icon*.png
+*.iml
+
+build/
