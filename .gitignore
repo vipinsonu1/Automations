@@ -1,7 +1,4 @@
-.gradle
+/target/
+/target/**/*
 /.idea/
-.idea/workspace.xml
-!.idea/icon*.png
-*.iml
-
-build/
+/test-output/

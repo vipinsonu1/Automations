@@ -28,7 +28,7 @@ public class DashboardPage extends TestBase {
     @FindBy(xpath = "//a[@id='ac-faq']")
     WebElement helpcenterSections;
 
-    @FindBy(xpath = "//li[@class='nav-item']//a[@class='nav-link']")
+    @FindBy(xpath = "//a[@data-tip='Settings']")
     WebElement settingSection;
 
     @FindBy(xpath = "//p[contains(text(),'Bots')]")

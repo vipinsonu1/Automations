@@ -13,6 +13,14 @@ public class resources {
         String res="/bot/";
         return res;
     }
+    public  static String getAllBotData(){
+        String res="/rest/ws/bot/list";
+        return res;
+    }
+    public  static String singlegetBotData(){
+        String res="/rest/ws/botdetails/";
+        return res;
+    }
 
     public  static String getteam(){
         String res="/rest/ws/team/get";

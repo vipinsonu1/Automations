@@ -16,7 +16,9 @@ public class PropertiesFileAccess {
 
     public PropertiesFileAccess () throws IOException {
         prop = new Properties();
-        FileInputStream fis = new FileInputStream("/Users/vipinpandey/IdeaProjects/testcom/src/main/java/com/km/config/evn.properties");
+       // FileInputStream fis = new FileInputStream("/Users/vipinpandey/IdeaProjects/testcom/src/main/java/com/km/config/evn.properties");
+        FileInputStream fis =  new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/km/config/evn.properties");
+
         prop.load(fis);
     }
 }
