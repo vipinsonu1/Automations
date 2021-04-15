@@ -116,6 +116,18 @@ public class ScreenShotFullPageTest extends TestBase {
                 .withName("Content").save();
         Thread.sleep(2000);
     }
+    @Test(priority = 9)
+    public void answerBotScreenShot() throws InterruptedException {
+        dashboardSnapShot =new DashboardSnapShot();
+        dashboardSnapShot.loginToDashboard("vipin+testkm01012018@kommunicate.io", "abcdef");
+        dashboardSnapShot.openFaq();
+        driver.navigate().to("https://dashboard-test.kommunicate.io/helpcenter/answer-bot");
+        Thread.sleep(7000);
+        Shutterbug.shootPage
+                (driver, ScrollStrategy.WHOLE_PAGE,500,true)
+                .withName("Answer").save();
+        Thread.sleep(2000);
+    }
     @AfterMethod
     public void tearDown() {
         driver.quit();

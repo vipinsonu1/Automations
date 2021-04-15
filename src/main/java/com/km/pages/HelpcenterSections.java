@@ -13,7 +13,7 @@ public class HelpcenterSections extends TestBase {
     WebElement customizationText;
     @FindBy(xpath = "//a[contains(text(),'Answer Bot')]")
     WebElement answerBotText;
-    @FindBy(xpath = "//div[@class='sc-hZSUBg ikyXnl animated fadeIn']")
+    @FindBy(xpath = "//span[normalize-space()='New category']")
     WebElement newCatagory;
 
 

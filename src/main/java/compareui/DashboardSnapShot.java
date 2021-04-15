@@ -37,6 +37,9 @@ public class DashboardSnapShot extends TestBase {
     @FindBy(xpath = "//a[@id='ac-faq']")
     WebElement faq;
 
+    @FindBy(xpath = "//a[normalize-space()='Answer Bot']")
+    WebElement answer;
+
     public DashboardSnapShot() {
         PageFactory.initElements(driver, this);
     }
@@ -47,9 +50,7 @@ public class DashboardSnapShot extends TestBase {
         conversations.click();
     }
 
-    public void openUsers() {
-        users.click();
-    }
+    public void openUsers() { users.click(); }
 
     public void openBotIntegrations() {
         botintegrations.click();
@@ -59,9 +60,12 @@ public class DashboardSnapShot extends TestBase {
         integrations.click();
     }
 
+    public void answerBot(){answer.click();}
+
     public void openFaq() {
         faq.click();
     }
+
     public void clickLogin() {
         login.click();
     }

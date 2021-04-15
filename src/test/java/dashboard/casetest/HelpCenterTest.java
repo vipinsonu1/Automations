@@ -39,7 +39,7 @@ public class HelpCenterTest extends TestBase {
     @Test(priority = 2)
     public void verifyNewCatagoryTest() {
 
-        Assert.assertTrue(helpcenterSectionsPage.verifyNewCatagory() ,"NewCatagorye page is messing");
+        Assert.assertTrue(helpcenterSectionsPage.verifyNewCatagory() ,"New Catagorye page is messing");
     }
 
 

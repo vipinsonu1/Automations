@@ -40,7 +40,7 @@ public class CompareScreenShotTest extends TestBase {
     @Test(dataProvider = "dashboardshots", priority = 2, dataProviderClass = DataProviderScreenShot.class)
     public void compareImagesInside(String imagename, String url) throws InterruptedException, IOException {
         dashboardSnapShot =new DashboardSnapShot();
-        dashboardSnapShot.loginToDashboard("vipin+agkm210820202@applozic.com", "Vipin123");
+        dashboardSnapShot.loginToDashboard("vipin+testkm01012018@kommunicate.io", "abcdef");
         Thread.sleep(4000);
         driver.get(url);
         Thread.sleep(7000);
