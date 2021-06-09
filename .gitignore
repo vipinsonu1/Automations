@@ -1,4 +1,7 @@
-/target/
+*/target/*
 /target/**/*
 /.idea/
 /test-output/
+/out/
+*/target/**
+data/.DS_Store/

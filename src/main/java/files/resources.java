@@ -55,4 +55,12 @@ public class resources {
         String res="/rest/ws/loginv2";
         return res;
     }
+    public  static String category(){
+        String res="/rest/ws/resolution";
+        return res;
+    }
+    public  static String dispositions(){
+        String res="/resolution";
+        return res;
+    }
 }

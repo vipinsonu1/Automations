@@ -40,6 +40,7 @@ public class profileDetailApiTest extends PropertiesFileAccess {
 
 
 
+
     @Test(dataProvider="userdetails")
     public void profileDetailTest(String username,String authorization) throws IOException {
 
