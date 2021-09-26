@@ -63,4 +63,12 @@ public class resources {
         String res="/resolution";
         return res;
     }
+    public  static String apiSecure(){
+        String res="/rest/ws";
+        return res;
+    }
+    public  static String context(){
+        String res="/rest/ws/kompose/context";
+        return res;
+    }
 }

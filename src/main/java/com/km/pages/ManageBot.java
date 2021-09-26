@@ -17,14 +17,24 @@ public class ManageBot  extends TestBase {
     String ROW_BEFORE_XPATH="//*[@id='root']/div/div[2]/div/main/div[3]/div/div[2]/div[3]/div[";
     String ROW_AFTER_XPATH="]";
     String ROWS="//*[@id='root']/div/div[2]/div/main/div[3]/div/div[2]/div[3]/div";
-    @FindBy(xpath = "//div[4]//div[4]//span[2]")
+    @FindBy(xpath = "//*[@id='km-bot-test-scroll-zjx58copy-text']/ancestor::div[contains(@class,'col-3')]/following-sibling::div[contains(@class,'km-bot-edit-delete')]/child::span[contains(text(),'Edit')]")
     WebElement KOMPOSE;
-    @FindBy(xpath = "//input[contains(@placeholder,'Example: Alex, Bot')]")
+    @FindBy(id = "bot-integration-bot-name")
     WebElement BOT_NAME;
-    @FindBy(xpath = "//div[@class='BotStyledStep2__BotIconWrapper-sc-7ins27-7 itRSFU']//div[2]")
+    @FindBy(id = "bot-integration-upload-bot-image-3")
     WebElement BOT_IMAGE;
     @FindBy(xpath = "//button[normalize-space()='Save and proceed']")
     WebElement BOT_SAVE;
+    @FindBy(xpath = "//button[contains(text(),'Update bot setup')]")
+    WebElement SAVE_UPDATE;
+    @FindBy(xpath= "//*[@id='km-new-bot-19-dec-leuctcopy-text']/ancestor::div[contains(@class,'col-3')]/following-sibling::div[contains(@class,'km-bot-edit-delete')]/child::span[contains(@class,'km-test-bot-link')]/a")
+    WebElement TestBot;
+    @FindBy(xpath= "//*[@id='mck-text-box']")
+    WebElement TextBoxWidget;
+    @FindBy(xpath ="//iframe[@id='kommunicate-widget-iframe']")
+    WebElement Myframe;
+    @FindBy(id="mck-msg-sbmt")
+    WebElement submit;
 
     Actions action = new Actions(driver);
 
@@ -68,6 +78,18 @@ public class ManageBot  extends TestBase {
         Thread.sleep(2000);
         BOT_IMAGE.click();
         BOT_SAVE.click();
+        SAVE_UPDATE.click();
+        driver.get("https://dashboard-test.kommunicate.io/bots/manage-bots");
+        TestBot.click();
+        List<WebElement> iframeElements = driver.findElements(By.tagName("iframe"));
+        System.out.println("Total number of iframes are " + iframeElements.getClass());
+        Myframe.click();
+        Thread.sleep(5000);
+        driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        TextBoxWidget.clear();
+        TextBoxWidget.sendKeys("card");
+        submit.click();
+
     }
 
 }

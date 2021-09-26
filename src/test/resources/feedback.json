@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "groupId": {
+          "type": "integer"
+        },
+        "comments": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "rating": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "null"
+        },
+        "supportAgentId": {
+          "type": "integer"
+        },
+        "userInfo": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "userId": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "userId"
+          ]
+        },
+        "applicationId": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "deleteAt": {
+          "type": "null"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "groupId",
+        "comments",
+        "rating",
+        "type",
+        "supportAgentId",
+        "userInfo",
+        "applicationId",
+        "createdAt",
+        "updatedAt",
+        "deleteAt",
+        "created_at",
+        "updated_at",
+        "user_id"
+      ]
+    }
+  },
+  "required": [
+    "code",
+    "data"
+  ]
+}

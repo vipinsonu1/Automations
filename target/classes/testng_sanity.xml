@@ -9,6 +9,7 @@
             <class name="dashboard.casetest.LoginPageTest" />
             <class name="dashboard.casetest.DashboardPageTest" />
             <class name="dashboard.casetest.HelpCenterTest" />
+            <class name="apiTestCases.feedback.feedbackold"></class>
         </classes>
     </test>
 

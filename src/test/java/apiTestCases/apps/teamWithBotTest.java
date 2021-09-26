@@ -45,8 +45,6 @@ public class teamWithBotTest extends PropertiesFileAccess {
 
 
         RestAssured.baseURI = prop.getProperty("APPSHOST");
-
-
         RequestSpecification httpRequest = RestAssured.given();
 
         httpRequest.headers("Content-Type", "application/json");

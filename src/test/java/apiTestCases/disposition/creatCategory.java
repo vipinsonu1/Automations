@@ -9,13 +9,12 @@ import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.IOException;
-import java.util.ArrayList;
+
 
 public class creatCategory extends PropertiesFileAccess {
 
@@ -131,7 +130,6 @@ public class creatCategory extends PropertiesFileAccess {
         httpRequest.body(requestparams.toString());
         Response response =httpRequest.request(Method.POST, resources.dispositions() + "/sub/disposition");
         System.out.println(response);
-
         String responseBody =response.getBody().asString();
         System.out.println(responseBody);
 
