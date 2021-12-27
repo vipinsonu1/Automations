@@ -22,7 +22,7 @@ public class findbrokenlink {
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
-        driver.get("https://5f2c1c04dd62150009dd025c--sanjeev-website.netlify.app/features");
+        driver.get("https://test.kommunicate.io/");
         Thread.sleep(5000);
         List<WebElement> links= driver.findElements(By.tagName("a"));
         System.out.println("total link of page "+ links.size());
