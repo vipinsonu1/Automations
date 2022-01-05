@@ -22,7 +22,7 @@ public class BotSectionsTest  extends TestBase {
     public void setUp() {
         initialization();
         loginPage = new LoginPage();
-        dashboardPage = loginPage.loginToDashboard("vipin+testkm01012018@applozic.com", "abcdef");
+        dashboardPage = loginPage.loginToDashboard("vipin+testkm01012018@kommunicate.io", "abcdef");
         botSections=dashboardPage.clickBotSections();
     }
     @Test(priority = 1)

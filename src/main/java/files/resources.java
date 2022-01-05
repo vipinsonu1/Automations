@@ -71,4 +71,17 @@ public class resources {
         String res="/rest/ws/kompose/context";
         return res;
     }
+    public  static String zendesk(){
+        String res="/zendesk";
+        return res;
+    }
+
+    public  static String whatsApp(){
+        String res="/chatplatform/whatsapp/dialog360";
+        return res;
+    }
+    public  static String nlp(){
+        String res="/intent/cluster";
+        return res;
+    }
 }
