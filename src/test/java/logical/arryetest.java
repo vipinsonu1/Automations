@@ -17,11 +17,6 @@ public class arryetest {
         try {
             reader.read(charArray);
 
-
-
-
-
-
                 System.out.println(Arrays.toString(charArray));
 
             count ++;

@@ -7,15 +7,13 @@ import io.restassured.http.Method;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import static io.restassured.RestAssured.given;
 
 public class intentCluster  extends PropertiesFileAccess {
@@ -28,17 +26,25 @@ public class intentCluster  extends PropertiesFileAccess {
         RestAssured.baseURI =  prop.getProperty("KOMPOSE");
         RequestSpecification httpRequest=RestAssured.given();
 
-        httpRequest.headers("Content-Type","application/json");
+        httpRequest.headers("Content-Type","application/json").log().all();
         httpRequest.queryParam("applicationId","13502b850a6b45f737d1d499825ad365c");
-        //httpRequest.header ("x-authorization","eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3VzlQVHVaUnZVaHlrSzNSMUd1N2RIdnZlOEl3UEtGdSIsInVzZXJLZXkiOiI3YThhOTkyYi1lNjkzLTRlZmUtOTFlNy0wNzJiODBiOGEyN2QiLCJhcHBsaWNhdGlvbklkIjoiMTlhN2Y0OTA3ZGZmMTk4N2Y4MjkyMjc1ODk1ODI4NWJiIiwiZGV2aWNlS2V5IjoiYzk2ODgwMTItY2ZhMC00ZDU1LWI1OGYtMGE2MGVkZTZjNDI3IiwiY3JlYXRlZEF0VGltZSI6MTYyMzczNDQ3OTc3NCwidmFsaWRVcHRvIjo0MzIwMH0.pidcAv8G1tM_xvWRHmbdLfDbbeTbXP2Aa7L5khURjp4");
-
-        Response response =httpRequest.request(Method.POST, resources.nlp());
-        httpRequest.log().all();
+        System.out.println("=================================================================");
+        Response response =httpRequest.request(Method.POST, resources.nlp()).then().log().all().extract().response();
         String responseBody =response.getBody().asString();
-        System.out.println(responseBody);
-        //Assert.assertEquals(responseBody.contains("application settings updated successfully"),true);
         int statusCode=response.getStatusCode();
         Assert.assertEquals(statusCode,200);
+        Date date = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
+        File file = new File(System.getProperty("user.dir")+"/test-output/nlp-output/"+dateFormat.format(date) + ".json");
+        File fileObj = new File(String.valueOf(file));
+        if(fileObj.createNewFile()) {
+            FileWriter myWriter = new FileWriter(fileObj);
+            myWriter.write(responseBody);
+            myWriter.close();
+        }else {
+            System.out.println("Failed");
+        }
+
     }
 
     @Test(priority = 1)

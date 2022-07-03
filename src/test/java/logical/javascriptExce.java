@@ -20,7 +20,7 @@ public class javascriptExce {
     WebElement launchWidget;
     @FindBy(id = "hat-popup-widget-container")
     WebElement WidgetContainer;
-    public static final String WEB_JAVA_SCRIPT = "    (function(d, m){\n" +
+    public static final String WEB_JAVA_SCRIPT = " (function(d, m){\n" +
             "        var kommunicateSettings = \n" +
             "            {\"appId\":\"14d4ba62306d657d0c5170928d94a7ce0\",\"popupWidget\":true,\"automaticChatOpenOnNavigation\":true};\n" +
             "        var s = document.createElement(\"script\"); s.type = \"text/javascript\"; s.async = true;\n" +
@@ -39,14 +39,6 @@ public class javascriptExce {
         String actualTitle = "";
         driver.get(baseUrl);
         JavascriptExecutor js = (JavascriptExecutor) driver;
- /*       js.executeScript(" (function(d, m){\n" +
-                "        var kommunicateSettings = \n" +
-                "            {\"appId\":\"3c951e76437b755ce5ee8ad8a06703505\",\"popupWidget\":true,\"automaticChatOpenOnNavigation\":true};\n" +
-                "        var s = document.createElement(\"script\"); s.type = \"text/javascript\"; s.async = true;\n" +
-                "        s.src = \"https://widget-test.kommunicate.io/v2/kommunicate.app\";\n" +
-                "        var h = document.getElementsByTagName(\"head\")[0]; h.appendChild(s);\n" +
-                "        window.kommunicate = m; m._globals = kommunicateSettings;\n" +
-                "    })(document, window.kommunicate || {});");*/
         js.executeScript(WEB_JAVA_SCRIPT);
 
         actualTitle = driver.getTitle();
@@ -84,7 +76,7 @@ public class javascriptExce {
         send.click();
     }
 */
-    @Test(invocationCount = 5, invocationTimeOut = 6000)
+    @Test(invocationCount = 5)
     public void sampleTest() throws Exception {
         System.out.println("Foo.");
         Thread.sleep(2000);
