@@ -1,8 +1,1 @@
-*/target/*
-/target/**/*
-.idea/
-/.idea/
 /test-output/
-/out/
-*/target/**
-data/.DS_Store/
