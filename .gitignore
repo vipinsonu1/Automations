@@ -1,1 +1,8 @@
 /test-output/
+*/target/*
+/target/**/*
+.idea/
+/.idea/
+/out/
+data/.DS_Store/
+.DS_Store/
