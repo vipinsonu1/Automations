@@ -6,3 +6,5 @@
 /out/
 data/.DS_Store/
 .DS_Store/
+
+# if any will please remove the cache git rm -r --cached target
